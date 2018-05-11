@@ -13,37 +13,104 @@
     <taggedValue xmi:id="_QkfukFVdEeicvsGNVYu6aQ" tag="Is Use Sample Data" value="false"/>
     <context xmi:id="_EdYLxlVdEeicvsGNVYu6aQ">
       <connection href="../../metadata/fileDelimited/data_0.1.item#_1pKJgFVcEeicvsGNVYu6aQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz4lVcEeicvsGNVYu6aQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz41VcEeicvsGNVYu6aQ"/>
       <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz5FVcEeicvsGNVYu6aQ"/>
-      <analysedElements xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz5VVcEeicvsGNVYu6aQ"/>
     </context>
     <results xmi:id="_EdYLx1VdEeicvsGNVYu6aQ">
-      <resultMetadata xmi:id="_EdYLyFVdEeicvsGNVYu6aQ"/>
-      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qkd5YVVdEeicvsGNVYu6aQ">
+      <resultMetadata xmi:id="_EdYLyFVdEeicvsGNVYu6aQ" executionDate="2018-05-11T13:54:38.436-0700" executionDuration="216" message="" executionNumber="1" lastRunOk="true" lastExecutionNumberOk="1"/>
+      <indicators xsi:type="dataquality.indicators:RowCountIndicator" xmi:id="_Qkd5YVVdEeicvsGNVYu6aQ" count="4" computed="true">
         <parameters xmi:id="_Qkd5YlVdEeicvsGNVYu6aQ"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz5FVcEeicvsGNVYu6aQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Row_Count_0.1.definition#_ccFOkBF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_hNHtsFVdEeicvsGNVYu6aQ" name="Row Count" label="Row Count">
+          <taggedValue xmi:id="_hNHtsVVdEeicvsGNVYu6aQ" tag="Description" value="counts the number of rows"/>
+          <taggedValue xmi:id="_hNHtslVdEeicvsGNVYu6aQ" tag="Purpose" value="evaluates the number of records"/>
+          <sqlGenericExpression xmi:id="_hNHts1VdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qkd5Y1VdEeicvsGNVYu6aQ">
+      <indicators xsi:type="dataquality.indicators:NullCountIndicator" xmi:id="_Qkd5Y1VdEeicvsGNVYu6aQ" count="4" computed="true">
         <parameters xmi:id="_Qkd5ZFVdEeicvsGNVYu6aQ"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz5FVcEeicvsGNVYu6aQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Null_Count_0.1.definition#_GrAeADh9Ed2XmO7pl5Yuyg"/>
+        <builtInIndicatorDefinition xmi:id="_hNResFVdEeicvsGNVYu6aQ" name="Null Count" label="Null Count">
+          <taggedValue xmi:id="_hNResVVdEeicvsGNVYu6aQ" tag="Purpose" value="evaluate the number of missing data (null records)"/>
+          <taggedValue xmi:id="_hNReslVdEeicvsGNVYu6aQ" tag="Description" value="counts the number of null rows"/>
+          <sqlGenericExpression xmi:id="_hNRes1VdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qkd5ZVVdEeicvsGNVYu6aQ">
+      <indicators xsi:type="dataquality.indicators:DistinctCountIndicator" xmi:id="_Qkd5ZVVdEeicvsGNVYu6aQ" count="4" computed="true" distinctValueCount="4">
         <parameters xmi:id="_Qkd5ZlVdEeicvsGNVYu6aQ"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz5FVcEeicvsGNVYu6aQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Distinct_Count_0.1.definition#_ccHq0BF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_hNW-QFVdEeicvsGNVYu6aQ" name="Distinct Count" label="Distinct Count">
+          <taggedValue xmi:id="_hNW-QVVdEeicvsGNVYu6aQ" tag="Description" value="counts the number of distinct rows (like a &quot;SELECT DISTINCT&quot; SQL statement)"/>
+          <taggedValue xmi:id="_hNW-QlVdEeicvsGNVYu6aQ" tag="Purpose" value="evaluates the number of distinct records"/>
+          <sqlGenericExpression xmi:id="_hNW-Q1VdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT DISTINCT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) A" language="SQL"/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_Qkd5Z1VdEeicvsGNVYu6aQ">
+      <indicators xsi:type="dataquality.indicators:UniqueCountIndicator" xmi:id="_Qkd5Z1VdEeicvsGNVYu6aQ" count="4" computed="true" uniqueValueCount="4">
         <parameters xmi:id="_Qkd5aFVdEeicvsGNVYu6aQ"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz5FVcEeicvsGNVYu6aQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Unique_Count_0.1.definition#_ccHq0RF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_hNe6EFVdEeicvsGNVYu6aQ" name="Unique Count" label="Unique Count">
+          <taggedValue xmi:id="_hNe6EVVdEeicvsGNVYu6aQ" tag="Description" value="counts the number of unique rows (i.e. distinct rows with only one instance: rows that are not duplicated)"/>
+          <taggedValue xmi:id="_hNe6ElVdEeicvsGNVYu6aQ" tag="Purpose" value="evaluates the number of unique records"/>
+          <sqlGenericExpression xmi:id="_hNe6E1VdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_hNe6FFVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_hNe6FVVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_hNe6FlVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount = 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_hNe6F1VdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_hNe6GFVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_hNe6GVVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) = 1)  myquery" language="Hive" version=""/>
+        </builtInIndicatorDefinition>
       </indicators>
-      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_Qkd5aVVdEeicvsGNVYu6aQ">
+      <indicators xsi:type="dataquality.indicators:DuplicateCountIndicator" xmi:id="_Qkd5aVVdEeicvsGNVYu6aQ" count="4" computed="true" duplicateValueCount="0">
         <parameters xmi:id="_Qkd5alVdEeicvsGNVYu6aQ"/>
         <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz5FVcEeicvsGNVYu6aQ"/>
         <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Simple Statistics/Duplicate_Count_0.1.definition#_ccHq0hF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_hNnc8FVdEeicvsGNVYu6aQ" name="Duplicate Count" label="Duplicate Count">
+          <taggedValue xmi:id="_hNnc8VVdEeicvsGNVYu6aQ" tag="Description" value="counts the number of duplicate rows. This number and the number of unique data equals the number of distinct rows"/>
+          <taggedValue xmi:id="_hNnc8lVdEeicvsGNVYu6aQ" tag="Purpose" value="evaluates the number of duplicated records"/>
+          <sqlGenericExpression xmi:id="_hNnc81VdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="SQL"/>
+          <sqlGenericExpression xmi:id="_hNnc9FVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_hNnc9VVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_hNnc9lVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING mycount > 1) AS myquery" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_hNnc91VdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Microsoft SQL Server"/>
+          <sqlGenericExpression xmi:id="_hNnc-FVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) mycount FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) AS myquery" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_hNnc-VVdEeicvsGNVYu6aQ" body="SELECT COUNT(*) FROM (SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) FROM &lt;%=__TABLE_NAME__%>  m &lt;%=__WHERE_CLAUSE__%> GROUP BY &lt;%=__COLUMN_NAMES__%> HAVING COUNT(*) > 1) myquery" language="Hive"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MeanIndicator" xmi:id="_hHEJAFVdEeicvsGNVYu6aQ" count="4" computed="true" sumStr="10" datatype="4">
+        <parameters xmi:id="_hHEJAVVdEeicvsGNVYu6aQ"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz5FVcEeicvsGNVYu6aQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Mean_0.1.definition#_ccI48RF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_hNvYwFVdEeicvsGNVYu6aQ" name="Mean" label="Mean">
+          <taggedValue xmi:id="_hNvYwVVdEeicvsGNVYu6aQ" tag="Description" value="computes the mean (average) of the records"/>
+          <taggedValue xmi:id="_hNvYwlVdEeicvsGNVYu6aQ" tag="Purpose" value="evaluates the mean value of numerical records"/>
+          <sqlGenericExpression xmi:id="_hNvYw1VdEeicvsGNVYu6aQ" body="SELECT SUM(&lt;%=__COLUMN_NAMES__%>), COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="SQL"/>
+          <sqlGenericExpression xmi:id="_hNvYxFVdEeicvsGNVYu6aQ" body="SELECT SUM(&lt;%=__COLUMN_NAMES__%>), COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_hNvYxVVdEeicvsGNVYu6aQ" body="SELECT SUM(&lt;%=__COLUMN_NAMES__%>), COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_hNvYxlVdEeicvsGNVYu6aQ" body="SELECT SUM(&lt;%=__COLUMN_NAMES__%>), COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_hNvYx1VdEeicvsGNVYu6aQ" body="SELECT SUM(CAST (&lt;%=__COLUMN_NAMES__%> AS REAL)), COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="Teradata"/>
+          <sqlGenericExpression xmi:id="_hNvYyFVdEeicvsGNVYu6aQ" body="SELECT SUM(double(&lt;%=__COLUMN_NAMES__%>)), COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>" language="DB2"/>
+        </builtInIndicatorDefinition>
+      </indicators>
+      <indicators xsi:type="dataquality.indicators:MedianIndicator" xmi:id="_hHEJAlVdEeicvsGNVYu6aQ" count="4" computed="true" median="2.5" frequenceTable="ACED0005737200116A6176612E7574696C2E547265654D61700CC1F63E2D256AE60300014C000A636F6D70617261746F727400164C6A6176612F7574696C2F436F6D70617261746F723B787070770400000004737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B0200007870000000017372000E6A6176612E6C616E672E4C6F6E673B8BE490CC8F23DF0200014A000576616C75657871007E000400000000000000017371007E00030000000271007E00077371007E00030000000371007E00077371007E00030000000471007E000778">
+        <parameters xmi:id="_hHEJA1VdEeicvsGNVYu6aQ"/>
+        <analyzedElement xsi:type="TalendMetadata:MetadataColumn" href="../../metadata/fileDelimited/data_0.1.item#_1pNz5FVcEeicvsGNVYu6aQ"/>
+        <indicatorDefinition href="../../TDQ_Libraries/Indicators/System Indicators/Summary Statistics/Median_0.1.definition#_ccI48hF2Ed2PKb6nEJEvhw"/>
+        <builtInIndicatorDefinition xmi:id="_hN2tgFVdEeicvsGNVYu6aQ" name="Median" label="Median">
+          <taggedValue xmi:id="_hN2tgVVdEeicvsGNVYu6aQ" tag="Description" value="The median is the value separating the higher half of a sample, a population or a probability distribution from the lower half"/>
+          <taggedValue xmi:id="_hN2tglVdEeicvsGNVYu6aQ" tag="Purpose" value="evaluates the median of the records"/>
+          <sqlGenericExpression xmi:id="_hN2tg1VdEeicvsGNVYu6aQ" body="SELECT AVG(DISTINCT &lt;%=__COLUMN_NAMES__%>) FROM (SELECT a.&lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> a, &lt;%=__TABLE_NAME__%> b WHERE a.&lt;%=__COLUMN_NAMES__%> IS NOT NULL AND b.&lt;%=__COLUMN_NAMES__%> IS NOT NULL &lt;%=__AND_WHERE_CLAUSE__%> GROUP BY a.&lt;%=__COLUMN_NAMES__%> HAVING  SUM(CASE WHEN  b.&lt;%=__COLUMN_NAMES__%> &lt; a.&lt;%=__COLUMN_NAMES__%>   THEN 1 ELSE 0 END) &lt;= (SUM(CASE WHEN a.&lt;%=__COLUMN_NAMES__%> = b.&lt;%=__COLUMN_NAMES__%> THEN 1 ELSE 0 END)  +  SUM(CASE WHEN  b.&lt;%=__COLUMN_NAMES__%> > a.&lt;%=__COLUMN_NAMES__%>   THEN 1 ELSE 0 END)) AND  SUM(CASE WHEN  b.&lt;%=__COLUMN_NAMES__%> > a.&lt;%=__COLUMN_NAMES__%>   THEN 1 ELSE 0 END) &lt;= (SUM(CASE WHEN a.&lt;%=__COLUMN_NAMES__%> = b.&lt;%=__COLUMN_NAMES__%> THEN 1 ELSE 0 END)  + SUM(CASE WHEN  b.&lt;%=__COLUMN_NAMES__%> &lt; a.&lt;%=__COLUMN_NAMES__%>   THEN 1 ELSE 0 END)) ) T" language="SQL"/>
+          <sqlGenericExpression xmi:id="_hN2thFVdEeicvsGNVYu6aQ" body="SELECT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NOT NULL &lt;%=__AND_WHERE_CLAUSE__%> ORDER BY &lt;%=__COLUMN_NAMES__%> LIMIT &lt;%=__LIMIT_OFFSET__%>,&lt;%=__LIMIT_ROW__%>" language="MySQL"/>
+          <sqlGenericExpression xmi:id="_hN2thVVdEeicvsGNVYu6aQ" body="SELECT AVG(&lt;%=__COLUMN_NAMES__%>) FROM ( SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) OVER( ) total, CAST(COUNT(*) OVER( ) AS DECIMAL)/2 mid, CEIL(CAST(COUNT(*) OVER( ) AS DECIMAL)/2) next, ROW_NUMBER() OVER ( ORDER BY &lt;%=__COLUMN_NAMES__%>) rn FROM &lt;%=__TABLE_NAME__%> &lt;%=__WHERE_CLAUSE__%>) x WHERE ( MOD(total,2) = 0&#x9; AND rn IN ( mid, mid+1 ) ) OR ( MOD(total,2) = 1 AND rn = next )" language="Oracle"/>
+          <sqlGenericExpression xmi:id="_hN2thlVdEeicvsGNVYu6aQ" body="SELECT MEDIAN(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NOT NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle" version="10"/>
+          <sqlGenericExpression xmi:id="_hN2th1VdEeicvsGNVYu6aQ" body=" SELECT PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY &lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NOT NULL &lt;%=__AND_WHERE_CLAUSE__%>" language="Oracle" version="9"/>
+          <sqlGenericExpression xmi:id="_hN2tiFVdEeicvsGNVYu6aQ" body="SELECT AVG(double(&lt;%=__COLUMN_NAMES__%>)) FROM ( SELECT &lt;%=__COLUMN_NAMES__%>, COUNT(*) OVER( ) total, CAST(COUNT(*) OVER( ) AS DECIMAL)/2 mid, CEIL(CAST(COUNT(*) OVER( ) AS DECIMAL)/2) next, ROW_NUMBER() OVER ( ORDER BY &lt;%=__COLUMN_NAMES__%>) rn FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NOT NULL &lt;%=__AND_WHERE_CLAUSE__%>) x WHERE ( MOD(total,2) = 0&#x9; AND rn IN ( mid, mid+1 ) ) OR ( MOD(total,2) = 1 AND rn = next )" language="DB2"/>
+          <sqlGenericExpression xmi:id="_hN2tiVVdEeicvsGNVYu6aQ" body="SELECT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NOT NULL &lt;%=__AND_WHERE_CLAUSE__%> ORDER BY &lt;%=__COLUMN_NAMES__%> LIMIT &lt;%=__LIMIT_ROW__%> OFFSET &lt;%=__LIMIT_OFFSET__%>" language="PostgreSQL"/>
+          <sqlGenericExpression xmi:id="_hN2tilVdEeicvsGNVYu6aQ" body="SELECT AVG(cast (&lt;%=__COLUMN_NAMES__%> AS NUMERIC)) FROM (SELECT distinct &lt;%=__COLUMN_NAMES__%> FROM (SELECT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> UNION ALL SELECT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> ) STT WHERE (SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>) &lt;= (SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM (SELECT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> UNION ALL SELECT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> ) AS SOU WHERE SOU.&lt;%=__COLUMN_NAMES__%> &lt;= STT.&lt;%=__COLUMN_NAMES__%>) AND (SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM &lt;%=__TABLE_NAME__%>) &lt;= (SELECT COUNT(&lt;%=__COLUMN_NAMES__%>) FROM (SELECT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> UNION ALL SELECT &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%>) AS SUR WHERE SUR.&lt;%=__COLUMN_NAMES__%> >= STT.&lt;%=__COLUMN_NAMES__%>) ) T" language="Adaptive Server Enterprise | Sybase Adaptive Server IQ"/>
+          <sqlGenericExpression xmi:id="_hN2ti1VdEeicvsGNVYu6aQ" body="SELECT * FROM (SELECT TOP &lt;%=__LIMIT_ROW__%> &lt;%=__COLUMN_NAMES__%> FROM (SELECT TOP &lt;%=__LIMIT_ROW_PLUS_OFFSET__%> &lt;%=__COLUMN_NAMES__%> FROM &lt;%=__TABLE_NAME__%> WHERE &lt;%=__COLUMN_NAMES__%> IS NOT NULL &lt;%=__AND_WHERE_CLAUSE__%> ORDER BY &lt;%=__COLUMN_NAMES__%> ASC ) AS FOO ORDER BY &lt;%=__COLUMN_NAMES__%> DESC ) AS BAR" language="Microsoft SQL Server"/>
+        </builtInIndicatorDefinition>
       </indicators>
     </results>
     <parameters xmi:id="_EdYLyVVdEeicvsGNVYu6aQ" dataFilter="_Qkg8sFVdEeicvsGNVYu6aQ" analysisType="Multiple Column Analysis" executionLanguage="Java"/>
