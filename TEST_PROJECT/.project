@@ -10,4 +10,11 @@
 		<nature>org.talend.core.talendnature</nature>
 		<nature>com.oaklandsw.transform.runtime.nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>.test-20180511-1428-00000.pdf</name>
+			<type>1</type>
+			<location>C:/Users/vivek/Desktop/test-20180511-1428-00000.pdf</location>
+		</link>
+	</linkedResources>
 </projectDescription>
