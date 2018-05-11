@@ -21,7 +21,7 @@
   <taggedValue xmi:id="_uOf8gVVhEeicvsGNVYu6aQ" tag="OutputFileName" value="test"/>
   <taggedValue xmi:id="_uOf8glVhEeicvsGNVYu6aQ" tag="Single output" value="false"/>
   <taggedValue xmi:id="_uOf8g1VhEeicvsGNVYu6aQ" tag="OutputType" value="pdf"/>
-  <taggedValue xmi:id="_uOf8hFVhEeicvsGNVYu6aQ" tag="REP_GENERATE_FILE" value="false"/>
+  <taggedValue xmi:id="_uOf8hFVhEeicvsGNVYu6aQ" tag="REP_GENERATE_FILE" value="true"/>
   <taggedValue xmi:id="_uOgjkVVhEeicvsGNVYu6aQ" tag="REP_LAST_RUN_CONTEXT" value="Default"/>
   <analysisMap xmi:id="_TqRsb1VgEeicvsGNVYu6aQ" mustRefresh="true" reportType="Basic">
     <analysis href="../Analyses/column_id_0.1.ana#_PRlN0FVgEeicvsGNVYu6aQ"/>
