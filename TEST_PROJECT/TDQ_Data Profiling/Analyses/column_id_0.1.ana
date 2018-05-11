@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
-  <dataquality.analysis:Analysis xmi:id="_PRlN0FVgEeicvsGNVYu6aQ" name="column_id" creationDate="2018-05-11T14:14:06.178-0700" defaultContext="Default">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:dataquality.analysis="http://dataquality.analysis" xmlns:dataquality.domain="http://dataquality.domain" xmlns:dataquality.indicators="http://dataquality.indicators" xmlns:dataquality.reports="http://dataquality.reports" xmlns:orgomg.cwm.objectmodel.core="http:///orgomg/cwm/objectmodel/core.ecore" xmlns:relational="http://www.talend.org/cwm/resource/relational/2010">
+  <dataquality.analysis:Analysis xmi:id="_PRlN0FVgEeicvsGNVYu6aQ" name="column_id" supplierDependency="_TqSTcFVgEeicvsGNVYu6aQ" creationDate="2018-05-11T14:14:06.178-0700" defaultContext="Default">
     <clientDependency href="../../metadata/fileDelimited/data_0.1.item#_QkdSUFVdEeicvsGNVYu6aQ"/>
     <taggedValue xmi:id="_PRlN0VVgEeicvsGNVYu6aQ" tag="Status" value="development"/>
     <taggedValue xmi:id="_PRlN0lVgEeicvsGNVYu6aQ" tag="Author" value="sid@company.com"/>
@@ -90,4 +90,7 @@
       </expressions>
     </ranges>
   </dataquality.domain:Domain>
+  <orgomg.cwm.objectmodel.core:Dependency xmi:id="_TqSTcFVgEeicvsGNVYu6aQ" kind="Usage" supplier="_PRlN0FVgEeicvsGNVYu6aQ">
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/column_id_0.1.rep#_TqRsYFVgEeicvsGNVYu6aQ"/>
+  </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
