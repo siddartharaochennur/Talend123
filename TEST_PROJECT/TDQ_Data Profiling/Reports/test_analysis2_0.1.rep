@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataquality.reports:TdReport xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:dataquality.reports="http://dataquality.reports" xmi:id="_CzBQ0FVfEeicvsGNVYu6aQ" name="test_analysis2" creationDate="2018-05-11T14:05:32.820-0700">
+  <clientDependency href="../Analyses/testanalysis_0.1.ana#_pq-OUFVeEeicvsGNVYu6aQ"/>
+  <taggedValue xmi:id="_CzBQ0VVfEeicvsGNVYu6aQ" tag="OutputFolder" value=""/>
+  <taggedValue xmi:id="_CzBQ0lVfEeicvsGNVYu6aQ" tag="REP_DBINFO_DBTYPE" value="HSQL"/>
+  <taggedValue xmi:id="_CzBQ01VfEeicvsGNVYu6aQ" tag="REP_DBINFO_DBVERSION" value=""/>
+  <taggedValue xmi:id="_CzBQ1FVfEeicvsGNVYu6aQ" tag="REP_DBINFO_HOST" value=""/>
+  <taggedValue xmi:id="_CzBQ1VVfEeicvsGNVYu6aQ" tag="REP_DBINFO_PORT" value=""/>
+  <taggedValue xmi:id="_CzBQ1lVfEeicvsGNVYu6aQ" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_CzBQ11VfEeicvsGNVYu6aQ" tag="REP_DBINFO_SCHEMA" value=""/>
+  <taggedValue xmi:id="_CzBQ2FVfEeicvsGNVYu6aQ" tag="REP_DBINFO_USER" value="sa"/>
+  <taggedValue xmi:id="_CzBQ2VVfEeicvsGNVYu6aQ" tag="REP_DBINFO_PASSWORD" value="yJKHKGWEAQw="/>
+  <taggedValue xmi:id="_CzBQ2lVfEeicvsGNVYu6aQ" tag="REP_DBINFO_URL" value="jdbc:hsqldb:file:C:\Users\vivek\workspace1\TDQ_reporting_db\talend_dq"/>
+  <taggedValue xmi:id="_CzBQ21VfEeicvsGNVYu6aQ" tag="REP_DBINFO_DRIVER" value="org.hsqldb.jdbcDriver"/>
+  <taggedValue xmi:id="_CzBQ3FVfEeicvsGNVYu6aQ" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.HSQLDialect"/>
+  <taggedValue xmi:id="_CzBQ3VVfEeicvsGNVYu6aQ" tag="REP_PASSWORD_CONTEXT" value="false"/>
+  <taggedValue xmi:id="_CzBQ3lVfEeicvsGNVYu6aQ" tag="Author" value="sid@company.com"/>
+  <analysisMap xmi:id="_CzBQ31VfEeicvsGNVYu6aQ" mustRefresh="true" reportType="Basic">
+    <analysis href="../Analyses/testanalysis_0.1.ana#_EdYLwFVdEeicvsGNVYu6aQ"/>
+  </analysisMap>
+</dataquality.reports:TdReport>

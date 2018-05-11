@@ -202,5 +202,6 @@
   </dataquality.domain:Domain>
   <orgomg.cwm.objectmodel.core:Dependency xmi:id="_pq-OUFVeEeicvsGNVYu6aQ" kind="Usage" supplier="_EdYLwFVdEeicvsGNVYu6aQ">
     <client xsi:type="dataquality.reports:TdReport" href="../Reports/testanalysis_0.1.rep#_pq9nQFVeEeicvsGNVYu6aQ"/>
+    <client xsi:type="dataquality.reports:TdReport" href="../Reports/test_analysis2_0.1.rep#_CzBQ0FVfEeicvsGNVYu6aQ"/>
   </orgomg.cwm.objectmodel.core:Dependency>
 </xmi:XMI>
