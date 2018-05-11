@@ -6,11 +6,11 @@
   <taggedValue xmi:id="_TqRsY1VgEeicvsGNVYu6aQ" tag="REP_DBINFO_DBVERSION" value="MYSQL_5"/>
   <taggedValue xmi:id="_TqRsZFVgEeicvsGNVYu6aQ" tag="REP_DBINFO_HOST" value="192.168.0.63"/>
   <taggedValue xmi:id="_TqRsZVVgEeicvsGNVYu6aQ" tag="REP_DBINFO_PORT" value="3306"/>
-  <taggedValue xmi:id="_TqRsZlVgEeicvsGNVYu6aQ" tag="REP_DBINFO_DBNAME" value="talend_dq"/>
+  <taggedValue xmi:id="_TqRsZlVgEeicvsGNVYu6aQ" tag="REP_DBINFO_DBNAME" value="dq"/>
   <taggedValue xmi:id="_TqRsZ1VgEeicvsGNVYu6aQ" tag="REP_DBINFO_SCHEMA" value=""/>
   <taggedValue xmi:id="_TqRsaFVgEeicvsGNVYu6aQ" tag="REP_DBINFO_USER" value="artha"/>
   <taggedValue xmi:id="_TqRsaVVgEeicvsGNVYu6aQ" tag="REP_DBINFO_PASSWORD" value="RX/CTwlUNiA="/>
-  <taggedValue xmi:id="_TqRsalVgEeicvsGNVYu6aQ" tag="REP_DBINFO_URL" value="jdbc:mysql://192.168.0.63:3306/talend_dq?characterEncoding=UTF8"/>
+  <taggedValue xmi:id="_TqRsalVgEeicvsGNVYu6aQ" tag="REP_DBINFO_URL" value="jdbc:mysql://192.168.0.63:3306/dq?characterEncoding=UTF8"/>
   <taggedValue xmi:id="_TqRsa1VgEeicvsGNVYu6aQ" tag="REP_DBINFO_DRIVER" value="org.gjt.mm.mysql.Driver"/>
   <taggedValue xmi:id="_TqRsbFVgEeicvsGNVYu6aQ" tag="REP_DBINFO_DIALECT" value="org.hibernate.dialect.MySQLDialect"/>
   <taggedValue xmi:id="_TqRsbVVgEeicvsGNVYu6aQ" tag="REP_PASSWORD_CONTEXT" value="false"/>
